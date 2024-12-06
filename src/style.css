@@ -1,0 +1,32 @@
+#header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.logo-container {
+    height: 66px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse {
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.nav-link {
+    display: block;
+    padding: .0rem 0rem;
+    color: #b4aed0;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-item :hover {
+    color: #b4aed04f;
+}
