@@ -4,7 +4,9 @@
     align-items: center;
     background-color: #f8f9fa;
 }
-
+/* #logo-container svg {
+    filter: drop-shadow(2px 4px 6px rgba(212, 209, 66, 1)); 
+} */
 .logo-container {
     height: 66px;
     display: flex;
@@ -29,4 +31,19 @@
 
 .nav-item :hover {
     color: #b4aed04f;
+}
+
+#header-hidden {
+    display: none;
+}
+
+@media (max-width:480px) {
+    .navbar-collapse {
+        display: none;
+    }
+
+    #header-hidden {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 }
