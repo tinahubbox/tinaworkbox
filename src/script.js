@@ -49,7 +49,7 @@ window.onload = function () {
     `;
     document.head.appendChild(style);
 
- 
+
     const closeButton = document.createElement("button");
     closeButton.textContent = "×";
     closeButton.style.position = "absolute";
@@ -66,7 +66,7 @@ window.onload = function () {
         document.body.removeChild(backdrop);
     };
 
- 
+
     alertBox.appendChild(closeButton);
     alertBox.appendChild(message);
     alertBox.appendChild(spinner);
