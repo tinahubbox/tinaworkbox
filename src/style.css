@@ -17,8 +17,10 @@
 .logo:active {
     opacity: 0.5;
 }
-
-.logo {
+.logo{
+    transition: opacity 0.5s ease;
+}
+.logo.clicked{
     cursor: pointer;
 }
 
