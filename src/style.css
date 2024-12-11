@@ -14,11 +14,15 @@
     align-items: center;
 }
 
-.logo:active {
+/* .logo:active {
     opacity: 0.5;
-}
+} */
 .logo{
     cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+.logo.clicked{
+    opacity: 0.5;
 }
 
 .navbar-collapse {

@@ -77,15 +77,29 @@ window.onload = function () {
     backdrop.style.visibility = "visible";
     backdrop.style.opacity = "1";
 };
-  const svgElement = document.querySelector('.menu-toggler-icon');
-  svgElement.addEventListener('pointerdown', () => {
-    svgElement.classList.add('clicked'); 
-  });
-  svgElement.addEventListener('pointerup', () => {
+
+const svgElement = document.querySelector('.menu-toggler-icon');
+svgElement.addEventListener('pointerdown', () => {
+    svgElement.classList.add('clicked');
+});
+svgElement.addEventListener('pointerup', () => {
     setTimeout(() => {
-      svgElement.classList.remove('clicked'); 
-    }, 500); 
-  });
-  svgElement.addEventListener('pointerleave', () => {
+        svgElement.classList.remove('clicked');
+    });
+});
+svgElement.addEventListener('pointerleave', () => {
     svgElement.classList.remove('clicked');
-  });
+});
+
+const svgElement2 = document.querySelector('.logo');
+svgElement2.addEventListener('pointerdown', () => {
+    svgElement2.classList.add('clicked');
+});
+svgElement2.addEventListener('pointerup', () => {
+    setTimeout(() => {
+        svgElement2.classList.remove('clicked');
+    });
+});
+svgElement2.addEventListener('pointerleave', () => {
+    svgElement2.classList.remove('clicked');
+});
