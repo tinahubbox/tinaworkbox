@@ -50,10 +50,12 @@
     border: 0.1px solid #c8b4c136;
     border-radius: 60px;
 }
-
-.menu-toggler-icon:active {
-    opacity: 0.5;
+.menu-toggler-icon.clicked{
+    opacity: 0.5;  
 }
+/* .menu-toggler-icon:active {
+    opacity: 0.5;
+} */
 
 .menu-list {
     list-style-type: none;

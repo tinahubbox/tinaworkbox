@@ -77,4 +77,15 @@ window.onload = function () {
     backdrop.style.visibility = "visible";
     backdrop.style.opacity = "1";
 };
-
+  const svgElement = document.querySelector('.menu-toggler-icon');
+  svgElement.addEventListener('pointerdown', () => {
+    svgElement.classList.add('clicked'); 
+  });
+  svgElement.addEventListener('pointerup', () => {
+    setTimeout(() => {
+      svgElement.classList.remove('clicked'); 
+    }, 500); 
+  });
+  svgElement.addEventListener('pointerleave', () => {
+    svgElement.classList.remove('clicked');
+  });
