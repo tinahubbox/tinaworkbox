@@ -77,14 +77,4 @@ window.onload = function () {
     backdrop.style.visibility = "visible";
     backdrop.style.opacity = "1";
 };
-const svgElement = document.querySelector('.menu-toggler-icon');
 
-svgElement.addEventListener('touchstart', () => {
-    svgElement.classList.add('clicked');
-});
-
-svgElement.addEventListener('touchend', () => {
-    setTimeout(() => {
-        svgElement.classList.remove('clicked');
-    }, 500);
-});
