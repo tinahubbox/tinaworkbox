@@ -17,11 +17,12 @@
 /* .logo:active {
     opacity: 0.5;
 } */
-.logo{
+.logo {
     cursor: pointer;
     transition: opacity 0.5s ease;
 }
-.logo.clicked{
+
+.logo.clicked {
     opacity: 0.5;
 }
 
@@ -51,15 +52,15 @@
 
 .menu-toggler-icon {
     cursor: pointer;
-    border: 0.1px solid #c8b4c136;
+    border: 0.1px solid #c8b4c100;
     border-radius: 60px;
 }
-.menu-toggler-icon.clicked{
-    opacity: 0.5;  
+
+.menu-toggler-icon.clicked {
+    background-color: #c8b4c163;
+    transition: background-color 0.05s ease;
 }
-/* .menu-toggler-icon:active {
-    opacity: 0.5;
-} */
+
 
 .menu-list {
     list-style-type: none;
@@ -83,7 +84,7 @@
     border-bottom: 1px solid #ddd;
 }
 
-.menu-link:active {
+.menu-item.clicked {
     opacity: 0.5;
 }
 
